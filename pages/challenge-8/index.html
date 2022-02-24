@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #boxes {
+        display: grid;
+        width: 200px;
+        height: 200px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+      }
+
+      #boxes > div {
+        background-color: gray;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <b>Reto 8:</b>
+      Colorear las cajas de forma aleatoria con el color amarillo, azul y rojo,
+      al pasar el mouse por encima. Al salir, debe volver a su color original.
+    </p>
+    <div id="boxes">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

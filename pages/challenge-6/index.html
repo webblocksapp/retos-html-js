@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #avatar {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+      }
+
+      #avatar > div {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: gray;
+        margin-bottom: 7px;
+        background-position: center;
+        background-size: cover;
+      }
+
+      #avatar > .primary-text {
+        margin: 0;
+        margin-bottom: 3px;
+      }
+
+      #avatar > .secondary-text {
+        margin: 0;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      #avatar-form {
+        margin-bottom: 17px;
+      }
+
+      #avatar-form > div {
+        margin-bottom: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <b>Reto 6:</b>
+      Programar un selector de avatar
+    </p>
+    <div id="avatar-form">
+      <div>
+        <label>Nombre y apellido:</label>
+        <input name="fullName" />
+      </div>
+      <div>
+        <label>Email:</label>
+        <input name="email" />
+      </div>
+      <div>
+        <label>Foto:</label>
+        <select name="photo">
+          <option value="">Select a photo</option>
+          <option value="imgs/jim.jpeg">Jim</option>
+          <option value="imgs/will.jpeg">Will</option>
+        </select>
+      </div>
+    </div>
+    <div id="avatar">
+      <div class="img"></div>
+      <p class="primary-text">Nombre Apellido</p>
+      <p class="secondary-text">email@test.com</p>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
